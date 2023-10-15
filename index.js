@@ -6,6 +6,7 @@ const app = express();
 // middle-ware
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
+app.use(express.static('public'));
 
 // API - twilio
 const accountSid = keys.accountSid;
@@ -60,7 +61,7 @@ async function instructionSMS(response, num, delay) {
 
 // event handlers
 app.get('/', (request, response) => {
-  fs.readFile('./pages/home.html', 'utf8', (error, html) => {
+  fs.readFile('./HomeApp/index.html', 'utf8', (error, html) => {
       response.send(html); // host website homepage here
   });
 });
@@ -78,7 +79,7 @@ app.post('/receive-sms', (request, response) => { // api endpoint for twilio htt
       origin: userAddresses[0],
       destination: userAddresses[1],
       mode: 'walking',
-      region: 'CA'
+      region: 'ca'
     }
   }).then((response) => {
     if (response.statusText == "OK") {

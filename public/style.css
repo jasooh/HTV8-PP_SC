@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body, h1, h2, p, ul {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #333;
+}
+
+/* Hero */
+
+.section-header {
+  width: 100vw;
+  height: 60vh;
+  border-radius: 2px;
+  transition: all, 2s;
+}
+
+.title-holder {
+  width: 50%; 
+  height: 100%;
+  display: flex;
+  align-items:last baseline;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  width: 80%;
+  height: 40%;
+  font-size: 4em;
+  font-weight: 400;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: -4vh;
+}
+
+.sub-header {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #B2ADAD;
+}
+
+.transition {
+  width: 100vw;
+  height: 20vh;
+  position: absolute;
+  z-index: 1;
+  background: linear-gradient(180deg, #333 13.02%, rgba(75, 75, 75, 0.94) 32.29%, rgba(102, 102, 102, 0.76) 54.17%, rgba(192, 192, 192, 0.17) 91.67%, rgba(217, 217, 217, 0.00) 100%);
+}
+
+.circle-main {
+  width: 40em;
+  height: 40em;
+  background-color: #B2ADAD;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  left: 65%;
+  top: 3em;
+  transition: all, 2s;
+}
+
+.circle-small-1 {
+  width: 20em;
+  height: 20em;
+  background-color: #004C3C;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+  left: 60%;
+  top: 25em;
+  transition: all, 2s;
+}
+
+.circle-small-2 {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  background-color: #004C3C;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 3;
+  left: 90%;
+  top: -1%;
+  transition: all, 2s;
+}
+
+.phone {
+  width: 18em;
+  position: absolute;
+  z-index: 3;
+  left: 90%;
+  top: 18em;
+  transition: all, 2s;
+}
+
+/* Effects */
+
+.vertical-shrink {
+  height: 0;
+  opacity: 0;
+}
+
+.circle-scale {
+  height: 50em;
+  width: 50em;
+  left: 20%;
+}
+
+.small-circle-1-pos-1 {
+  left: 20%;  
+  top: 1em;
+}
+
+.small-circle-2-pos-1 {
+  left: 63%;  
+  top: 70vh;
+  /* position: sticky; */
+}
+
+.small-circle-1-pos-2 {   
+  left: 10vw;
+  top: 40vh;
+}
+
+.small-circle-2-pos-2 {
+  left: 63%;  
+  top: 40vh;
+}
+
+.small-circle-1-pos-3 {  
+  left: 15%; 
+  top: 70vh;
+}
+
+.small-circle-2-pos-3 {
+  left: 63%;  
+  top: 10vh;
+}
+
+.phone-pos {
+  left: 38%;
+  top: 9em;
+}
+
+/*  */
